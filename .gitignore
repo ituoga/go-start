@@ -23,3 +23,10 @@ go.work.sum
 
 # env file
 .env
+sql/zz
+tmp/bin/*
+data/*
+static/*
+.task
+node_modules
+sql/*.log
