@@ -17,6 +17,9 @@ tasks:
       - go install github.com/delaneyj/toolbelt/sqlc-gen-zombiezen@latest
       - go install golang.org/x/tools/cmd/goimports@latest  
 
+  deps:
+    cmds:
+      - pnpm install
 
   sqlc:
     dir: sql
