@@ -1,5 +1,7 @@
 package layoutview
 
+import "github.com/delaneyj/datastar"
+
 templ Main() {
 	<!DOCTYPE html>
 	<html data-theme="light">
@@ -8,6 +10,7 @@ templ Main() {
 			<meta charset="utf-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
 			<link href="/static/index.css" rel="stylesheet" type="text/css"/>
+			@datastar.ScriptCDNLatest()
 		</head>
 		<body>
 			<div class="navbar bg-base-100">
