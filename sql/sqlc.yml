@@ -8,7 +8,7 @@ plugins:
 sql:
   - engine: "sqlite"
     queries: "./queries"
-    schema: "./migrations"
+    schema: "../migrations/sql"
     codegen:
       - out: zz
         plugin: zz
