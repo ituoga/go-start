@@ -29,7 +29,7 @@ func SetupRoutes(logger *slog.Logger, router chi.Router) error {
 	sessionStore.MaxAge(int(24 * time.Hour / time.Second))
 
 	if err := errors.Join(
-		SetupPWA(router, sessionStore, ns),
+		SetupManifest(router, sessionStore, ns),
 		SetupHome(router, sessionStore, ns),
 	); err != nil {
 		return fmt.Errorf("error setting up routes: %w", err)
